@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/ThemeContext.jsx',
     output: {
         path: path.resolve('lib'),
-        filename: 'BackgroundImage.js',
+        filename: 'ThemeContext.js',
         libraryTarget: 'commonjs2'
     },
     module: {
@@ -25,7 +25,15 @@ module.exports = {
                     // Compiles Sass to CSS
                     'sass-loader',
                 ],
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                    },
+                ],
             }
         ]
     }
-}
+};

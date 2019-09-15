@@ -1,5 +1,4 @@
 # React Theme
-
 React Theme es un contexto qye provee de toda la información relevante en materia de estilo al resto
 de componentes de la librería de Oubli. Los componentes de Oubli son
 capaces de **funcionar sin necesidad de implementar esta librería** pero cualquier cambia general de estilo y propiedades

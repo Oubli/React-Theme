@@ -1,2 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import ThemeProvider from './ThemeProvider.jsx';
+import ThemeConsumer from './ThemeConsumer.jsx';
+
+
+export {ThemeProvider, ThemeConsumer};
+
+export default {ThemeProvider, ThemeConsumer};
