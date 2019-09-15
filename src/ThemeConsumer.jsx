@@ -3,9 +3,10 @@ import Context from './ContextBuild.jsx'
 
 const Consumer = (Component) => {
     class withContext extends React.Component{
+
         render() {
-            const { oubliTheme } = this.context;
-            return <Component {...this.props} oubliTheme={ oubliTheme } />
+            let { oubliTheme } = this.context;
+            return <Component {...this.props} oubliTheme={ oubliTheme || this.context } />
         }
     }
 
