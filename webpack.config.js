@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/ThemeContext.jsx',
     output: {
         path: path.resolve('lib'),
-        filename: 'BackgroundImage.js',
+        filename: 'ThemeContext.js',
         libraryTarget: 'commonjs2'
     },
     module: {
